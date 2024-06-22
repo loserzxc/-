@@ -1,0 +1,50 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+namespace Lesson
+
+{
+    class Programm
+    {
+        public static void Main(string[] args)
+        {
+            double first,second;
+            string actions;
+            Console.WriteLine("Writte furst number");
+            first=double.Parse(Console.ReadLine());
+            Console.WriteLine("Writte second number");
+            second=double.Parse(Console.ReadLine());
+            Console.WriteLine("Writte action +,-,*,/");
+            actions=Console.ReadLine();
+            switch (actions)
+            {
+                case "+":
+                Console.WriteLine("НЕ знанаю");
+                break;
+                case "-":
+                Console.WriteLine(first-second);
+                break;
+                case "*":
+                Console.WriteLine(first*second);
+                break;
+                case "/":
+                if (second==0)
+                Console.WriteLine(0);
+                else
+                Console.WriteLine(first/second);
+                break;
+                
+                
+                
+                
+                default:
+                Console.WriteLine("НЕ знанаю");
+                break;
+                
+            }
+            Console.ReadLine();
+            
+        }
+    }
+}
